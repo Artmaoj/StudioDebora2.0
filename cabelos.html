@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Cabelos e Penteados - Studio Déborah Pereira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+    .navbar {
+      background-color: #ffffff;
+    }
+    .form-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Studio Déborah Pereira</a>
+    </div>
+  </nav>
+
+  <!-- Formulário de Agendamento -->
+  <div class="container">
+    <div class="form-container mx-auto col-md-6">
+      <h2 class="text-center mb-4">Agendar Cabelos e Penteados</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="servico" class="form-label">Serviço desejado</label>
+          <select class="form-select" id="servico" required>
+            <option value="">Selecione</option>
+            <option>Escova e Hidratação</option>
+            <option>Corte Moderno</option>
+            <option>Penteado Elegante</option>
+          </select>
+        </div>
+        <section class="py-5 bg-light" id="cabelos">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Cabelos e Penteados</h2>
+
+    <div class="row text-center">
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="https://imgs.search.brave.com/DMLuWgqSvcTftTawWqCn6aeY82-CK-p0k6OI0moVACY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMi1t/YXJpZWNsYWlyZS5n/bGJpbWcuY29tL2pJ/d2Y1MlNybHdoelR0/d2piTnNpaXNFal81/MD0vMHgwOjczMHg5/MTMvOTg0eDAvc21h/cnQvZmlsdGVyczpz/dHJpcF9pY2MoKS9p/LnMzLmdsYmltZy5j/b20vdjEvQVVUSF81/MWYwMTk0NzI2Y2E0/Y2FlOTk0YzMzMzc5/OTc3NTgyZC9pbnRl/cm5hbF9waG90b3Mv/YnMvMjAyNC85Lzgv/UzNaa2lYVEFTR1Zu/RTY4OE83OHcvcGVu/dGVhZG9zLXBhcmEt/Y2FzYW1lbnRvLWNp/dmlsLTYwLWZvdG9z/LXZpZGVvcy1pbmNy/aXZlaXMuanBlZw" 
+               class="card-img-top rounded" alt="Penteado elegante">
+          <div class="card-body">
+            <h5 class="card-title">Penteado Elegante</h5>
+            <p class="card-text text-muted">Perfeito para casamentos, formaturas e eventos especiais.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="https://imgs.search.brave.com/QX8kirJBBij90GvKoe8zu_8rrGwFdB3hnI2S93trUwQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzEyNzg2Mjcv/MTgwX2NvbG9yYWNh/b19jYWJlbG9fdG9k/b19oaWRyYXRhY2Fv/X2VzY292YV80MV8x/X2IwZWMzZjllN2Zj/NDliY2E2NzliZjJm/MDA1MTBiOTIzLnBu/Zw" 
+               class="card-img-top rounded" alt="Escova e hidratação">
+          <div class="card-body">
+            <h5 class="card-title">Escova & Hidratação</h5>
+            <p class="card-text text-muted">Cabelos sedosos, brilhantes e com movimento natural.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="https://imgs.search.brave.com/EUUyLz6HXbcalW4CQaBDEE1vdX9EfDH2d4LM6jy7rbI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmFzaGlvbmJ1YmJs/ZXMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzA1L2Nv/cnRlLWRlLWNhYmVs/by1mZW1pbmluby1t/dWxsZXQtLmpwZw" 
+               class="card-img-top rounded" alt="Corte moderno feminino">
+          <div class="card-body">
+            <h5 class="card-title">Corte Moderno</h5>
+            <p class="card-text text-muted">Transforme seu visual com cortes modernos e estilos personalizados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="mb-3">
+          <label for="data" class="form-label">Data</label>
+          <input type="date" class="form-control" id="data" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="hora" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="hora" required>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+          <a href="index.html" class="btn btn-secondary">Voltar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

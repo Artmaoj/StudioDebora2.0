@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar SPA - Studio Déborah Pereira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff5f8;
+    }
+    .navbar {
+      background-color: #f8d7da;
+    }
+    .form-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Studio Déborah Pereira</a>
+    </div>
+  </nav>
+
+  <!-- Formulário de Agendamento -->
+  <div class="container">
+    <div class="form-container mx-auto col-md-6">
+      <h2 class="text-center mb-4">Agendar SPA</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="servico" class="form-label">Serviço desejado</label>
+          <select class="form-select" id="servico" required>
+            <option value="">Selecione</option>
+            <option>Massagem Relaxante</option>
+            <option>Limpeza de Pele</option>
+            <option>Banho de Ofurô</option>
+            <option>Esfoliação Corporal</option>
+            <option>Day Spa Completo</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="data" class="form-label">Data</label>
+          <input type="date" class="form-control" id="data" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="hora" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="hora" required>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+          <a href="index.html" class="btn btn-secondary">Voltar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

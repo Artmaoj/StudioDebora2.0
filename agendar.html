@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Maquiagem | Studio Débora Pereira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://imgs.search.brave.com/1HV5n9EQ-DRsdLSEe5t-EKyGoa9eDrY6iOFNOZQaAos/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmxkZWxpbmRhLmNv/bS5ici93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8wMS9tYXF1/aWFnZW0tcm9zYS1i/ZWF1dHlieWNoYXN0/aXR5Xy0xMDI0eDU3/Ni5qcGc') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Studio Débora Pereira</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Agende sua Maquiagem</h1>
+      <p class="lead">Escolha o melhor horário para realçar sua beleza.</p>
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg border-0 rounded-4">
+          <div class="card-body p-4">
+            <h3 class="text-center mb-4 fw-bold">Formulário de Agendamento</h3>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nome completo</label>
+                <input type="text" class="form-control" placeholder="Digite seu nome" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Data</label>
+                  <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Horário</label>
+                  <input type="time" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Tipo de Maquiagem</label>
+                <select class="form-select">
+                  <option>Maquiagem de Festa</option>
+                  <option>Maquiagem para Noiva</option>
+                  <option>Maquiagem para Natura</option>
+                  
+                </select>
+              </div>
+
+              <section class="py-5" id="maquiagem" style="background-color: #ffe6f2;">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold text-dark">Maquiagem Profissional</h2>
+
+    <div class="row text-center">
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="https://imgs.search.brave.com/1HV5n9EQ-DRsdLSEe5t-EKyGoa9eDrY6iOFNOZQaAos/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmxkZWxpbmRhLmNv/bS5ici93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8wMS9tYXF1/aWFnZW0tcm9zYS1i/ZWF1dHlieWNoYXN0/aXR5Xy0xMDI0eDU3/Ni5qcGc" 
+               class="card-img-top rounded" alt="Maquiagem de festa">
+          <div class="card-body">
+            <h5 class="card-title">Maquiagem de Festa</h5>
+            <p class="card-text text-muted">Perfeita para eventos noturnos, com destaque para olhos e lábios.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="https://imgs.search.brave.com/FjDJeJ5zw-ae6sfdHyIuRUw7ztTz66QLgZb7lwJ5vMs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9lbGF0/b2RhLmNvbS5ici93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8w/Ni9PLUxvb2stTWFx/dWlhZ2VtLXBhcmEt/Tm9pdmEtMDguanBn" 
+               class="card-img-top rounded" alt="Maquiagem de noiva">
+          <div class="card-body">
+            <h5 class="card-title">Maquiagem de Noiva</h5>
+            <p class="card-text text-muted">Beleza radiante e natural para o dia mais importante da sua vida.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 shadow-sm">
+          <img src="https://imgs.search.brave.com/AXRAkew9OTzu66hQ5bEdRPwlypKSj0sITHIgjus0spw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmFzaGlvbmJ1YmJs/ZXMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzEwL21h/cXVpYWdlbS1uYXR1/cmFsLTcuanBn" 
+               class="card-img-top rounded" alt="Maquiagem natural">
+          <div class="card-body">
+            <h5 class="card-title">Maquiagem Natural</h5>
+            <p class="card-text text-muted">Leve, suave e ideal para o dia a dia, com um toque de frescor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="maquiagem.html" class="btn btn-primary px-4 py-2" style="background-color: #ff66b2; border: none;">
+        Agendar Maquiagem
+      </a>
+    </div>
+  </div>
+</section>
+
+
+              <div class="mb-3">
+                <label class="form-label">Observações</label>
+                <textarea class="form-control" rows="3" placeholder="Detalhes adicionais (opcional)"></textarea>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-dark btn-lg w-100" type="submit">Confirmar Agendamento</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="index.html" class="btn btn-outline-dark"> Voltar para o início</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Studio Débora Pereira — Todos os direitos reservados</p>
+    <p><small>Desenvolvido com por Arthur Barbosa</small></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
